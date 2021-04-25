@@ -26,19 +26,19 @@ export const NaviContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1200px;
+    max-width: 1100%;
 `;
 
 export const NavLogo = styled.div`
     color: #fff;
     justify-self: flex-start;
-    cursor: pointer;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+    cursor: default;
 `;
 
 export const MobileIcon = styled.div`
