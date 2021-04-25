@@ -6,7 +6,6 @@ import { Link as LinkR } from 'react-router-dom';
 export const Nav = styled.nav`
     background: #000;
     height: 60px;
-    /* margin-top: -80px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +13,10 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
 
     @media screen and (max-width: 991px) {
-        transition: 0.6 all ease;
+        transition: 0.6s all ease;
     }
 `;
 export const NaviContainer = styled.div`
@@ -83,6 +83,6 @@ export const NavLink = styled(LinkR)`
      cursor: pointer;
 
      &.active{
-         border-bottom: 3px solid blue;
+        border-bottom: 2px solid blue;
      }
 `
