@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 
+export const Styless = styled.body`
+    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};   
+`;
+
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
@@ -39,11 +43,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 80px);
+    grid-template-rows: repeat(2, 125px);
     text-align: center;
 
     @media screen and (max-width: 575px){
-        grid-template-rows: repeat(2, 60px);
+        grid-template-rows: repeat(2, 100px);
     }
 `;
 

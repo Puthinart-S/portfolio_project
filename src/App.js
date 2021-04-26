@@ -9,6 +9,7 @@ import Sidebar from './Components/side_bar/Sidebar';
 
 
 class App extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {

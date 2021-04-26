@@ -1,9 +1,11 @@
 import React from 'react';
+import MyPro from '../Components/my_project/MyPro';
+
 
 const MyProject = () =>{
     return (
     <React.Fragment>
-        <h1>This is Project</h1>
+        <MyPro/>
     </React.Fragment>
     );
 };
