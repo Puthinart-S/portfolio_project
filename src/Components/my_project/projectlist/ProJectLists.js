@@ -108,7 +108,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             <Background ref={modelRef}>
                 <animated.div style={animation}>
                 <ModalWrapper showModal={showModal}>
-                    <ModalImg src={require('../ImgPro/img11.png')} alt='proj1'/>
+                    <ModalImg src={require('../ImgPro/img11.png').default} alt='proj1'/>
                     <ModalContent>
                         <h1>Name</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
