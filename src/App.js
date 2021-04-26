@@ -22,7 +22,7 @@ class App extends Component {
   };
   render() {
     const toggle = () => {
-      this.setState({isOpen: !this.state.isOpen})
+      this.setState({isOpen: !this.state.isOpen});
     };
     return (
       <React.Fragment>

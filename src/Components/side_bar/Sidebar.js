@@ -1,9 +1,9 @@
 import React from 'react';
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements';
-
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarBody } from './SidebarElements';
 
 const  Sidebar = ({ isOpen, toggle }) => {
     return (
+        <SidebarBody isOpen={isOpen}>
             <SidebarContainer isOpen={isOpen}>
                 <Icon onClick={toggle}>
                     <CloseIcon/>
@@ -17,6 +17,7 @@ const  Sidebar = ({ isOpen, toggle }) => {
                     </SidebarMenu>
                 </SidebarWrapper>
             </SidebarContainer>
+        </SidebarBody>
     );
 };
 
