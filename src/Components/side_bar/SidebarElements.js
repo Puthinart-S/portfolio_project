@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 
-export const Styless = styled.body`
-    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};   
-`;
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -20,7 +17,6 @@ export const SidebarContainer = styled.aside`
     transition: 0.2s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     left: ${({ isOpen }) => (isOpen ? '0' : '100%')};
-    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
 `;
 
 export const CloseIcon = styled(FaTimes)`

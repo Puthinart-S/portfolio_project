@@ -1,10 +1,9 @@
 import React from 'react';
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, Styless} from './SidebarElements';
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements';
 
 
 const  Sidebar = ({ isOpen, toggle }) => {
     return (
-        <Styless isOpen={isOpen}>
             <SidebarContainer isOpen={isOpen}>
                 <Icon onClick={toggle}>
                     <CloseIcon/>
@@ -18,7 +17,6 @@ const  Sidebar = ({ isOpen, toggle }) => {
                     </SidebarMenu>
                 </SidebarWrapper>
             </SidebarContainer>
-        </Styless>
     );
 };
 
