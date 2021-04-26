@@ -3,6 +3,8 @@ import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 
 export const SidebarBody = styled.body`
+    width: 100%;
+    height: 100%;
     overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
 `;
 
