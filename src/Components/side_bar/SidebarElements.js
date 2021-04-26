@@ -5,7 +5,7 @@ import { Link as LinkR } from 'react-router-dom';
 export const SidebarBody = styled.body`
     width: 100%;
     height: 100%;
-    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
+    overflow-y: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
 `;
 
 export const SidebarContainer = styled.aside`
@@ -22,7 +22,7 @@ export const SidebarContainer = styled.aside`
     transition: 0.2s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     left: ${({ isOpen }) => (isOpen ? '0' : '100%')};
-    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
+    overflow-y: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
 `;
 
 export const CloseIcon = styled(FaTimes)`

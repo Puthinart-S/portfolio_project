@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MyprojectContainer = styled.div`
+    width : 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -55,7 +56,7 @@ export const MyprojectCard = styled.div`
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
-        border: 2.5px solid blue
+        border: 2.5px solid blue;
     };
 `;
 
