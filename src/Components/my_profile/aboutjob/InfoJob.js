@@ -32,7 +32,6 @@ const ModalWrapper = styled.div`
     align-items: center;
 
     @media screen and (max-width: 576px){
-        grid-template-rows: repeat(1,33%);
         grid-gap: 32px;
         margin-bottom: 75px;
     };
@@ -82,9 +81,6 @@ const CloseModalButton = styled(FaTimes)`
         color: #ff00ff;
     }
 
-    @media screen and (max-width: 576px){
-        top: -100px;
-    };
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {
