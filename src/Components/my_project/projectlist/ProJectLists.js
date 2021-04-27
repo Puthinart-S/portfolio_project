@@ -33,7 +33,7 @@ const ModalWrapper = styled.div`
     grid-gap: 32px;
     align-items: center;
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1,33%);
         grid-gap: 32px;
@@ -49,7 +49,7 @@ const ModalImg = styled.img`
     background: #000;
     max-height: 500px;
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         max-height: 200px;
     };
 `;
@@ -71,11 +71,11 @@ const ModalContent = styled.div`
         margin-bottom: 25%;
         margin-right: 2rem;
     }
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 992px){
         font-size: 1rem;
     };
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         max-height: 300px;
         font-size: 0.75rem;
         text-align: center;

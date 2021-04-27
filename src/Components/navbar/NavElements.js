@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     z-index: 10;
     width: 100%;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 992px) {
         transition: 0.6s all ease;
     }
 `;
@@ -48,7 +48,7 @@ export const NavLogo = styled.div`
 export const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         display: block;
         position: absolute;
         top: 0;
@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
     text-align: center;
     margin-right: -22px;
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         display: none;
     } 
 `;

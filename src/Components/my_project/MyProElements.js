@@ -10,11 +10,11 @@ export const MyprojectContainer = styled.div`
     background: #00ff70dd;
     padding-bottom: 32px;
 
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 992px){
         height: 100%;
     };
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         height: 100%;
         padding-bottom: 64px;
     };
@@ -29,11 +29,11 @@ export const MyprojectWrapper = styled.div`
     grid-gap: 32px;
     padding: 0 75px;
 
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 992px){
         grid-template-columns: 1fr 1fr; 
     };
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
         grid-gap: 64px;
         padding: 0 50px;
@@ -47,7 +47,7 @@ export const MyprojectCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 25px;
-    max-height: 360px;
+    max-height: 380px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -72,7 +72,7 @@ export const MyprojectH1 = styled.h1`
     margin-top: 16px;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 576px){
         font-size: 2rem;
     };
 `;
