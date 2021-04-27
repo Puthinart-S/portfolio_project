@@ -40,9 +40,9 @@ const MyProfile = () => {
                     </ProContent>
                     <ProContent>
                         <ProH2>Skills</ProH2>
-                        <ProP> - 2D-3D Animation/Game Design/Web Design</ProP>
-                        <ProP> - HTML/CSS/Js/Python/C++/MySQL</ProP>
-                        <ProP> - Bootrap/Vue/React/Node.Js</ProP>
+                        <ProP>2D-3D Animation/Game Design/Web Design</ProP>
+                        <ProP>HTML/CSS/Js/Python/C++/MySQL</ProP>
+                        <ProP>Bootrap/Vue/React/Node.Js</ProP>
                     </ProContent>
                 </ProWrapper>
             </ProContainer>
