@@ -44,27 +44,28 @@ const MyPro = () => {
                 <MyprojectWrapper>
                     <MyprojectCard onClick={openModal}>
                         <MyprojectImg src={Img1}/>
-                        <MyprojectH2>Name</MyprojectH2>
-                        <MyprojectP>1Lorem Ipsum is simply dummy text of the printing 
-                        and typesetting industry</MyprojectP>
+                        <MyprojectH2>World-Cup-Analysis</MyprojectH2>
+                        <MyprojectP>Website that bringing matches In the FIFA World Cup from 1930 to 2018, 
+                            analyse the places and display them in the most likely parts of the world.</MyprojectP>
+                        <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
                     <MyprojectCard onClick={openModal2}>
                         <MyprojectImg src={Img2}/>
-                        <MyprojectH2>Name2</MyprojectH2>
-                        <MyprojectP>2Lorem Ipsum is simply dummy text of the printing 
-                        and typesetting industry</MyprojectP>
+                        <MyprojectH2>History of Computer</MyprojectH2>
+                        <MyprojectP>Website for learning about computer</MyprojectP>
+                        <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
                     <MyprojectCard onClick={openModal3}>
                         <MyprojectImg src={Img3}/>
-                        <MyprojectH2>Name3</MyprojectH2>
-                        <MyprojectP>3Lorem Ipsum is simply dummy text of the printing 
-                        and typesetting industry</MyprojectP>
+                        <MyprojectH2>BKK Crime Scene</MyprojectH2>
+                        <MyprojectP>Website for arouse people to have an awareness.</MyprojectP>
+                        <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
                     <MyprojectCard onClick={openModal4}>
                         <MyprojectImg src={Img4}/>
-                        <MyprojectH2>Name4</MyprojectH2>
-                        <MyprojectP>4Lorem Ipsum is simply dummy text of the printing 
-                        and typesetting industry</MyprojectP>
+                        <MyprojectH2>Swamp Ancient Ruin</MyprojectH2>
+                        <MyprojectP>Created Custom landscape game</MyprojectP>
+                        <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
                 </MyprojectWrapper>
             </MyprojectContainer>

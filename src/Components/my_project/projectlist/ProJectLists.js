@@ -65,6 +65,7 @@ const ModalContent = styled.div`
     max-height: 500px;
     transition: all 0.2s ease-in-out;
     overflow-y: scroll;
+    -ms-overflow-style: none;
 
     p {
         margin-bottom: 25%;
@@ -115,14 +116,16 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <animated.div style={animation}>
                 <ModalWrapper showModal={showModal}>
                     <ModalImg src={require('../ImgPro/img11.png').default} alt='proj1'/>
-                    <ModalContent>
-                        <h1>Name</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <ModalContent style={{lineHeight:"2rem"}}>
+                        <h1>World-Cup-Analysis</h1>
+                        <p>Take the information of every match of the World Cup and draw on the parts that people are likely 
+                            interested in creating a graph and searching for analysis.</p>
+                        <p> - Graph the number of championships that each team has. <br/>
+                            - Graph the number of matches won, lost, and draws of each team, ranked according to the number of matches. <br/>
+                            - Graph the total number of goals each team has scored.</p>
+                        <p>Main language : Python <br/>
+                           Other language : HTML, CSS and JavaScript</p>
+                        <a href='https://github.com/Puthinart-S/World-Cup-Analysis'>click to go to Github</a><br/>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal
                     (prev => !prev)} />
@@ -155,13 +158,10 @@ export const Modal2 = ({ showModal2, setShowModal2 }) => {
                 <ModalWrapper showModal2={showModal2}>
                     <ModalImg src={require('../ImgPro/img12.png').default} alt='proj2'/>
                     <ModalContent>
-                        <h1>Name2</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h1>History of Computer</h1>
+                        <p>Website about history of computer in every era with some gimmicks</p>
+                        <p>Main language : HTML, CSS and JavaScript</p>
+                        <a href='https://hiscom.netlify.app/'>click to go to Website</a><br/>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal2
                     (prev2 => !prev2)} />
@@ -194,13 +194,10 @@ export const Modal3 = ({ showModal3, setShowModal3 }) => {
                 <ModalWrapper showModal3={showModal3}>
                     <ModalImg src={require('../ImgPro/img13.png').default} alt='proj3'/>
                     <ModalContent>
-                        <h1>Name3</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h1>BKK Crime Scene</h1>
+                        <p>Website about problem of road in Bangkok that must solve with some gimmicks</p>
+                        <p>Main language : HTML, CSS and JavaScript</p>
+                        <a href='https://bkkcrimescene.netlify.app/'>click to go to Website</a><br/>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal3
                     (prev3 => !prev3)} />
@@ -234,13 +231,10 @@ export const Modal4 = ({ showModal4, setShowModal4 }) => {
                 <ModalWrapper showModal4={showModal4}>
                     <ModalImg src={require('../ImgPro/img14.jpg').default} alt='proj4'/>
                     <ModalContent>
-                        <h1>Name4</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h1>Swamp Ancient Ruin</h1>
+                        <p>Game with Custom landscape that have mysterious story</p>
+                        <p>Program : Unreal Engine</p>
+                        <a href='https://drive.google.com/file/d/1Lt4N2MIMcpAQqubLgohjpnzp1-AFzMZ0/view'>click to go to Source</a><br/>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal4
                     (prev4 => !prev4)} />
