@@ -191,6 +191,13 @@ export const ProH22 = styled.h2`
     margin-top: 16px;
     margin-bottom: 32px;
     color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        color: #ff00ff;
+
+    }
+
     @media screen and (max-width: 576px){
         font-size: 1.75rem;
     };
