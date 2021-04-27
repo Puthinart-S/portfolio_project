@@ -21,7 +21,7 @@ const Background = styled.div`
 const ModalWrapper = styled.div`
     max-width: 100%;
     box-shadow: 0 5px 16px rgba(0,0,0,0.2);
-    background: #fff;
+    background: #000;
     color: #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,7 +60,7 @@ const ModalContent = styled.div`
     justify-content: flex-start;
     align-items: center;
     line-height: 2.0;
-    color: #141414;
+    color: #fff;
     font-size: 1rem;
     max-height: 500px;
     transition: all 0.2s ease-in-out;
@@ -82,7 +82,7 @@ const ModalContent = styled.div`
 `;
 
 const CloseModalButton = styled(FaTimes)`
-    color: blue;
+    color: #fff;
     cursor: pointer;
     position: absolute;
     top: 20px;
@@ -91,6 +91,10 @@ const CloseModalButton = styled(FaTimes)`
     height: 32px;
     padding: 0;
     z-index: 10;
+
+    &:hover{
+        color: #00ff70dd;
+    }
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {

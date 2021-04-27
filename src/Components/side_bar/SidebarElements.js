@@ -27,6 +27,10 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
+
+    &:hover{
+        color: #00ff70dd;
+    }
 `;
 
 export const Icon = styled.div`
@@ -37,10 +41,15 @@ export const Icon = styled.div`
     font-size: 2rem;
     cursor: pointer;
     outline: none;
+    
 `;
 
 export const SidebarWrapper = styled.div`
     color: #fff;
+
+    &:hover{
+        color: #00ff70dd;
+    }
 `
 
 export const SidebarMenu = styled.ul`
@@ -70,6 +79,7 @@ export const SidebarLink = styled(LinkR)`
 
     &:hover {
         transition: 0.2s ease-in-out;
+        color: #00ff70dd;
     }
 `;
 

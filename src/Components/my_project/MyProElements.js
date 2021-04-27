@@ -7,7 +7,7 @@ export const MyprojectContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: gray;
+    background: #00ff70dd;
     padding-bottom: 32px;
 
     @media screen and (max-width: 991px){
@@ -41,7 +41,7 @@ export const MyprojectWrapper = styled.div`
 `;
 
 export const MyprojectCard = styled.div`
-    background: #fff;
+    background: #000;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -56,7 +56,7 @@ export const MyprojectCard = styled.div`
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
-        border: 2.5px solid blue;
+        border: 3px solid #ff00ff;
     };
 `;
 
@@ -68,7 +68,7 @@ export const MyprojectImg = styled.img`
 
 export const MyprojectH1 = styled.h1`
     font-size: 2.5rem;
-    color: #fff;
+    color: #000;
     margin-top: 16px;
     margin-bottom: 32px;
 
@@ -78,11 +78,13 @@ export const MyprojectH1 = styled.h1`
 `;
 
 export const MyprojectH2 = styled.h2`
+    color: #fff;
     font-size: 1rem;
     margin-bottom: 10px;
 `;
 
 export const MyprojectP = styled.p`
+    color: #fff;
     font-size: 1rem;
     text-align: center;
 `;

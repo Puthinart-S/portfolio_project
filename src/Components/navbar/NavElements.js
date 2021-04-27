@@ -39,6 +39,10 @@ export const NavLogo = styled.div`
     font-weight: bold;
     text-decoration: none;
     cursor: default;
+
+    &:hover{
+        color: #00ff70dd;
+     }
 `;
 
 export const MobileIcon = styled.div`
@@ -82,7 +86,7 @@ export const NavLink = styled(LinkR)`
      height: 100px;
      cursor: pointer;
 
-     &.active{
-        border-bottom: 2px solid blue;
+     &:hover{
+        color: #00ff70dd;
      }
 `

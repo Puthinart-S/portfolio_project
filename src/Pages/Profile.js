@@ -1,9 +1,10 @@
 import React from 'react';
+import MyProfile from '../Components/my_profile/MyProfile';
 
 const Profile = () => {
     return (
     <React.Fragment>
-        <h1>this is profile</h1>
+        <MyProfile/>
     </React.Fragment>
     );
 };
