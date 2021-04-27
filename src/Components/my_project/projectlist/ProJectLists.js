@@ -82,7 +82,7 @@ const ModalContent = styled.div`
 `;
 
 const CloseModalButton = styled(FaTimes)`
-    color: #fff;
+    color: #00ff70dd;
     cursor: pointer;
     position: absolute;
     top: 20px;
@@ -93,7 +93,7 @@ const CloseModalButton = styled(FaTimes)`
     z-index: 10;
 
     &:hover{
-        color: #00ff70dd;
+        color: #ff00ff;
     }
 `;
 
