@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    width: 100%;
+    max-width: 100%;
 
     @media screen and (max-width: 992px) {
         transition: 0.6s all ease;
@@ -26,7 +26,7 @@ export const NaviContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100%;
+    max-width: 100%;
 `;
 
 export const NavLogo = styled.div`

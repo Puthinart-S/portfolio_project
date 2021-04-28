@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProContainer = styled.div`
-    width : 100%;
+    max-width : 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ export const ProWrapper = styled.div`
     align-items: center;
     grid-gap: 64px;
     padding: 0 45px;
-    max-height: 100%;
+
 
 
 
@@ -66,6 +66,11 @@ export const ProContent = styled.div`
         border-radius: 50px;
         border: 3px solid #ff00ff;
     }
+    
+    @media screen and (max-width: 576px){
+        max-width: 200px;
+
+    };
 `;
 
 export const ProImg = styled.img`
@@ -114,7 +119,7 @@ export const ProP = styled.p`
     text-align: center;
     color: #000;
     @media screen and (max-width: 576px){
-        font-size: 1rem;
+        font-size: 0.75rem;
     };
 `;
 
