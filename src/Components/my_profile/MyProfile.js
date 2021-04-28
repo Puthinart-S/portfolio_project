@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BoatImg from './imgref/boatimg.png';
 import Icons from './imgref/instagram.png';
 import Icons2 from './imgref/facebook.png';
 import Icons3 from './imgref/github.png';
 import { ProContainer, ProImg, ProWrapper, ProContent, ProContent2, ProP, ProH1,
-     ProH2, WrapHead, ProIcons, ProIcons2, ProIcons3, IconWrapper, LinkImg, ProH22, ProP2 } from './ProfileElements';
-import { Modal } from './aboutjob/InfoJob';
+     ProH2, WrapHead, ProIcons, ProIcons2, ProIcons3, IconWrapper, LinkImg, ProH22 } from './ProfileElements';
 
 
      const MyProfile = () => {
-    const [showModal, setShowModal] = useState(false);
-
-    const openModal = () => {
-        setShowModal(prev => !prev)
-    };
-
     return (
         <React.Fragment>
-            <Modal showModal={showModal} setShowModal={setShowModal}/>
             <ProContainer>
                 <WrapHead>
                 <ProH1>Profile</ProH1>
@@ -25,8 +17,7 @@ import { Modal } from './aboutjob/InfoJob';
                 <ProWrapper>
                         <ProImg src={BoatImg} alt='proj1'/>
                     <ProContent2>
-                        <ProH22 onClick={openModal}>UX/UI Designer</ProH22>
-                        <ProP2>Click for more Info</ProP2>
+                        <ProH22>Front-end Developer</ProH22>
                     </ProContent2>
                     <ProContent>
                         <ProH2>About</ProH2>
