@@ -31,12 +31,12 @@ export const ProWrapper = styled.div`
     padding: 0 45px;
 
 
-    @media screen and (min-width: 1440px){
-        margin: 150px;
+    @media screen and (min-width: 2560px){
+        margin: 155px;
  
 
     };
-
+   
 
     @media screen and (max-width: 992px){
         grid-template-columns: 1fr;

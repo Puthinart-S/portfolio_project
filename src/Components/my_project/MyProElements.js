@@ -29,7 +29,7 @@ export const MyprojectWrapper = styled.div`
     grid-gap: 32px;
     padding: 0 75px;
 
-    @media screen and (min-width: 1440px){
+    @media screen and (min-width: 2560px){
         margin: 300px;
         grid-gap: 108px;
     };
