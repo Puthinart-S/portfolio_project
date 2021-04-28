@@ -9,6 +9,7 @@ export const ProContainer = styled.div`
     align-items: center;
     background: #000;
     padding-bottom: 32px;
+    margin: 0 auto;
 
     @media screen and (max-width: 992px){
         height: 100%;
@@ -23,7 +24,6 @@ export const ProContainer = styled.div`
 
 export const ProWrapper = styled.div`
     max-width: 100%;
-    margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -31,6 +31,11 @@ export const ProWrapper = styled.div`
     padding: 0 45px;
 
 
+    @media screen and (min-width: 1440px){
+        margin: 150px;
+ 
+
+    };
 
 
     @media screen and (max-width: 992px){

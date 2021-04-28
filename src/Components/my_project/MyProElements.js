@@ -29,6 +29,11 @@ export const MyprojectWrapper = styled.div`
     grid-gap: 32px;
     padding: 0 75px;
 
+    @media screen and (min-width: 1440px){
+        margin: 300px;
+        grid-gap: 108px;
+    };
+
     @media screen and (max-width: 992px){
         grid-template-columns: 1fr 1fr; 
     };
@@ -58,6 +63,8 @@ export const MyprojectCard = styled.div`
         cursor: pointer;
         border: 3px solid #ff00ff;
     };
+
+    
 `;
 
 export const MyprojectImg = styled.img`
