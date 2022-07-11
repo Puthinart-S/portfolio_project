@@ -63,17 +63,18 @@ export const ProContent = styled.div`
     padding: 10px;
     margin: 20px;
     transition: all 0.2s ease-in-out;
-    max-height: 280px;
+    max-height: 300px;
     background: #00ff70dd;
     border-radius: 10px;
 
     &:hover{
-        border-radius: 50px;
+        border-radius: 40px;
         border: 3px solid #ff00ff;
     }
     
     @media screen and (max-width: 576px){
-        max-width: 200px;
+        max-width: 400px;
+
 
     };
 `;
@@ -128,13 +129,28 @@ export const ProP = styled.p`
     };
 `;
 
+export const ProP3 = styled.p`
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    @media screen and (max-width: 576px){
+        font-size: 0.75rem;
+    };
+`;
+
 export const ProIcons = styled.img`
     width: 30%;
     height: 30%;
 
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 8px;
+    }
+
     @media screen and (max-width: 576px){
-        width: 15%;
-        height: 15%;
+        width: 10%;
+        height: 10%;
     }
 `;
 
@@ -142,9 +158,14 @@ export const ProIcons2 = styled.img`
     width: 30%;
     height: 30%;
 
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 50px;
+    }
+
     @media screen and (max-width: 576px){
-        width: 15%;
-        height: 15%;
+        width: 10%;
+        height: 10%;
     }
 `;
 
@@ -152,15 +173,50 @@ export const ProIcons3 = styled.img`
     width: 30%;
     height: 30%;
 
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 50px;
+    }
+
     @media screen and (max-width: 576px){
-        width: 15%;
-        height: 15%;
+        width: 10%;
+        height: 10%;
+    }
+`;
+
+export const ProIcons4 = styled.img`
+    width: 22.5%;
+    height: 22.5%;
+
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 50px;
+    }
+
+    @media screen and (max-width: 576px){
+        width: 10%;
+        height: 10%;
+    }
+`;
+
+export const ProIcons5 = styled.img`
+    width: 20%;
+    height: 20%;
+
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 50px;
+    }
+
+    @media screen and (max-width: 576px){
+        width: 10%;
+        height: 10%;
     }
 `;
 
 export const IconWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
 
@@ -179,8 +235,18 @@ export const LinkImg = styled.a`
      text-decoration: none;
      list-style: none;
      padding: 0;
-     margin:0;
-     
+     margin-bottom: 1vw;
+
+`;
+
+export const LinkImg2 = styled.a`
+    display: flex;
+    flex-flow: column;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     list-style: none;
+     padding: 0;
 
 `;
 

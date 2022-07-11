@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Img1 from './ImgPro/img11.png';
 import Img2 from './ImgPro/img12.png';
 import Img3 from './ImgPro/img13.png';
@@ -31,6 +31,11 @@ const MyPro = () => {
     const openModal4 = () => {
         setShowModal4(prev4 => !prev4)
     };
+
+    useEffect(() =>{
+        (document.body.style.overflow = (showModal || showModal2 || showModal3 || showModal4 ) ? 'hidden' : 'unset');
+
+    }, [showModal, showModal2, showModal3, showModal4])
 
 
     return (

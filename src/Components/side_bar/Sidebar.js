@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarBody } from './SidebarElements';
 
 const  Sidebar = ({ isOpen, toggle }) => {
+
+    useEffect(() =>{
+        document.body.style.overflow = (isOpen) ? 'hidden' : "unset";
+    }, [isOpen])
     return (
         <SidebarBody isOpen={isOpen}>
             <SidebarContainer isOpen={isOpen}>
