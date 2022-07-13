@@ -47,7 +47,7 @@ const ModalImg = styled.img`
     height: 100%;
     border-radius: 10px 0 0 10px;
     background: #000;
-    max-height: 500px;
+    max-height: 475px;
 
     @media screen and (max-width: 576px){
         max-height: 200px;
@@ -62,7 +62,7 @@ const ModalContent = styled.div`
     line-height: 2.0;
     color: #fff;
     font-size: 1rem;
-    max-height: 500px;
+    max-height: 475px;
     transition: all 0.2s ease-in-out;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -98,6 +98,23 @@ const CloseModalButton = styled(FaTimes)`
     }
 `;
 
+const ProP = styled.p`
+    font-size: 1rem;
+    color: #fff;
+    @media screen and (max-width: 576px){
+        font-size: 0.75rem;
+    };
+`;
+const ProH1 = styled.h1`
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1vw;
+
+    @media screen and (max-width: 576px){
+        font-size: 2.5rem;
+    };
+`;
+
 export const Modal = ({ showModal, setShowModal }) => {
     const modelRef = useRef()
 
@@ -117,15 +134,16 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <ModalWrapper showModal={showModal}>
                     <ModalImg src={require('../ImgPro/img11.png').default} alt='proj1'/>
                     <ModalContent style={{lineHeight:"2rem"}}>
-                        <h1>World-Cup-Analysis</h1>
-                        <p>Take the information of every match of the World Cup and draw on the parts that people are likely 
-                            interested in creating a graph and searching for analysis.</p>
-                        <p> - Graph the number of championships that each team has. <br/>
-                            - Graph the number of matches won, lost, and draws of each team, ranked according to the number of matches. <br/>
-                            - Graph the total number of goals each team has scored.</p>
-                        <p>Main language : Python <br/>
-                           Other language : HTML, CSS and JavaScript</p>
-                        <a href='https://github.com/Puthinart-S/World-Cup-Analysis'>click to go to Github</a><br/>
+                        <ProH1>World-Cup-Analysis</ProH1>
+                        <ProP>Take the information of every match of the World Cup and draw on the parts that people are likely 
+                            interested in creating a graph and searching for analysis. <br/>
+                               &nbsp;&nbsp;&nbsp; - Graph the number of championships that each team has. <br/>
+                               &nbsp;&nbsp;&nbsp; - Graph the number of matches won, lost, and draws of each team, &nbsp;&nbsp;&nbsp;ranked according to the number of matches. <br/>
+                               &nbsp;&nbsp;&nbsp; - Graph the total number of goals each team has scored. <br/><br/>
+                            Main language : Python <br/>
+                            Other language : HTML, CSS and JavaScript <br/><br/>
+                            <a href='https://github.com/Puthinart-S/World-Cup-Analysis' style={{display: "flex",  justifyContent: "center" }} >click to go to Github</a>
+                        </ProP> 
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal
                     (prev => !prev)} />
@@ -158,10 +176,11 @@ export const Modal2 = ({ showModal2, setShowModal2 }) => {
                 <ModalWrapper showModal2={showModal2}>
                     <ModalImg src={require('../ImgPro/img12.png').default} alt='proj2'/>
                     <ModalContent>
-                        <h1>History of Computer</h1>
-                        <p>Website about history of computer in every era with some gimmicks</p>
-                        <p>Main language : HTML, CSS and JavaScript</p>
-                        <a href='https://hiscom.netlify.app/'>click to go to Website</a><br/>
+                        <ProH1>History of Computer</ProH1>
+                        <ProP>Website about history of computer in every era with some gimmicks<br/><br/>
+                        Main language : HTML, CSS and JavaScript <br/><br/>
+                        <a href='https://hiscom.netlify.app/' style={{display: "flex",  justifyContent: "center" }}>click to go to Website</a>
+                        </ProP>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal2
                     (prev2 => !prev2)} />
@@ -194,10 +213,11 @@ export const Modal3 = ({ showModal3, setShowModal3 }) => {
                 <ModalWrapper showModal3={showModal3}>
                     <ModalImg src={require('../ImgPro/img13.png').default} alt='proj3'/>
                     <ModalContent>
-                        <h1>BKK Crime Scene</h1>
-                        <p>Website about problem of road in Bangkok that must solve with some gimmicks</p>
-                        <p>Main language : HTML, CSS and JavaScript</p>
-                        <a href='https://bkkcrimescene.netlify.app/'>click to go to Website</a><br/>
+                        <ProH1>BKK Crime Scene</ProH1>
+                        <ProP>Website about problem of road in Bangkok that must solve with some gimmicks<br/><br/>
+                        Main language : HTML, CSS and JavaScript<br/><br/>
+                        <a href='https://bkkcrimescene.netlify.app/' style={{display: "flex",  justifyContent: "center" }}>click to go to Website</a>
+                        </ProP>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal3
                     (prev3 => !prev3)} />
@@ -231,10 +251,11 @@ export const Modal4 = ({ showModal4, setShowModal4 }) => {
                 <ModalWrapper showModal4={showModal4}>
                     <ModalImg src={require('../ImgPro/img14.jpg').default} alt='proj4'/>
                     <ModalContent>
-                        <h1>Swamp Ancient Ruin</h1>
-                        <p>Game with Custom landscape that have mysterious story</p>
-                        <p>Program : Unreal Engine</p>
-                        <a href='https://drive.google.com/file/d/1Lt4N2MIMcpAQqubLgohjpnzp1-AFzMZ0/view'>click to go to Source</a><br/>
+                        <ProH1>Swamp Ancient Ruin</ProH1>
+                        <ProP>Game with Custom landscape that have mysterious story<br/><br/>
+                        Program : Unreal Engine<br/><br/>
+                        <a href='https://drive.google.com/file/d/1Lt4N2MIMcpAQqubLgohjpnzp1-AFzMZ0/view' style={{display: "flex",  justifyContent: "center" }}>click to go to Source</a>
+                        </ProP>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal4
                     (prev4 => !prev4)} />
