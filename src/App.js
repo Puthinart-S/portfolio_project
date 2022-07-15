@@ -6,6 +6,7 @@ import MyProject from './Components/my_project/MyPro';
 import NoMatch from './Pages/NoMatch';
 import NaviBar from './Components/navbar/NaviBar';
 import Sidebar from './Components/side_bar/Sidebar';
+import './App.css'
 
 class App extends Component {
 

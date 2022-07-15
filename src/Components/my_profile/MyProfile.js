@@ -9,7 +9,7 @@ import { ProContainer, ProImg, ProWrapper, ProContent, ProContent2, ProP, ProH1,
      ProH2, WrapHead, ProIcons, ProIcons2, ProIcons3, IconWrapper, LinkImg, ProH22, ProIcons4, ProIcons5, LinkImg2, ProP3 } from './ProfileElements';
 
 
-     const MyProfile = () => {
+const MyProfile = () => {
     return (
         <React.Fragment>
             <ProContainer>
