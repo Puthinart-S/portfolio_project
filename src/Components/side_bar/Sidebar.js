@@ -7,6 +7,7 @@ const  Sidebar = ({ isOpen, toggle }) => {
         document.body.style.overflow = (isOpen) ? 'hidden' : "unset";
     }, [isOpen])
     return (
+        <>
         <SidebarBody isOpen={isOpen}>
             <SidebarContainer isOpen={isOpen}>
                 <Icon onClick={toggle}>
@@ -22,6 +23,7 @@ const  Sidebar = ({ isOpen, toggle }) => {
                 </SidebarWrapper>
             </SidebarContainer>
         </SidebarBody>
+        </>
     );
 };
 

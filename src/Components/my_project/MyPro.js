@@ -35,11 +35,11 @@ const MyPro = () => {
     useEffect(() =>{
         (document.body.style.overflow = (showModal || showModal2 || showModal3 || showModal4 ) ? 'hidden' : 'unset');
 
-    }, [showModal, showModal2, showModal3, showModal4])
+    }, [showModal, showModal2, showModal3, showModal4]);
 
 
     return (
-        <React.Fragment>
+        <>
             <Modal showModal={showModal} setShowModal={setShowModal}/>
             <Modal2 showModal2={showModal2} setShowModal2={setShowModal2}/>
             <Modal3 showModal3={showModal3} setShowModal3={setShowModal3}/>
@@ -74,7 +74,7 @@ const MyPro = () => {
                     </MyprojectCard>
                 </MyprojectWrapper>
             </MyprojectContainer>
-        </React.Fragment>
+        </>
     );
 };
 

@@ -5,6 +5,7 @@ import { FaTimes } from 'react-icons/fa';
 
 
 
+
 const Background = styled.div`
     width: 100%;
     height: 100%;
@@ -16,6 +17,12 @@ const Background = styled.div`
     z-index: 9999;
     padding: 50px;
     overflow: ${({ showModal }) => (showModal ? 'auto' : 'hidden')};
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 `;
 
 const ModalWrapper = styled.div`
@@ -64,8 +71,13 @@ const ModalContent = styled.div`
     font-size: 1rem;
     max-height: 475px;
     transition: all 0.2s ease-in-out;
-    overflow-y: scroll;
     -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
     p {
         margin-bottom: 25%;

@@ -9,7 +9,6 @@ export const ProContainer = styled.div`
     align-items: center;
     background: #000;
     padding-bottom: 32px;
-    margin: 0 auto;
 
     @media screen and (max-width: 992px){
         height: 100%;

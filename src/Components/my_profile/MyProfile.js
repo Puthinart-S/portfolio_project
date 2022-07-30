@@ -11,7 +11,7 @@ import { ProContainer, ProImg, ProWrapper, ProContent, ProContent2, ProP, ProH1,
 
 const MyProfile = () => {
     return (
-        <React.Fragment>
+        <>
             <ProContainer>
                 <WrapHead>
                 <ProH1>Profile</ProH1>
@@ -54,7 +54,7 @@ const MyProfile = () => {
                     </ProContent>
                 </ProWrapper>
             </ProContainer>
-        </React.Fragment>
+        </>
     )
 };
 
