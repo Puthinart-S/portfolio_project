@@ -48,7 +48,7 @@ const MyProfile = () => {
                     </ProContent>
                     <ProContent>
                         <ProH2>Skills</ProH2>
-                        <ProP>2D-3D Animation/Game Design/Web Design/AdobeXD</ProP>
+                        <ProP>2D-3D Animation/Game Design/Web Design/AdobeXD/Figma</ProP>
                         <ProP>HTML/CSS/JavaScript/Bootrap/PHP/Python/C++/MySQL</ProP>
                         <ProP>React.js/Node.js/Express.js/MongoDB/Firebase</ProP>
                     </ProContent>

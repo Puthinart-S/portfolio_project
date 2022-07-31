@@ -28,6 +28,7 @@ export const ProWrapper = styled.div`
     align-items: center;
     grid-gap: 64px;
     padding: 0 45px;
+    margin: 0 auto;
 
 
     @media screen and (min-width: 2560px){
