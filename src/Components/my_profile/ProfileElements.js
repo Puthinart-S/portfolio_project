@@ -73,11 +73,6 @@ export const ProContent = styled.div`
         border: 3px solid #ff00ff;
     }
     
-    @media screen and (max-width: 576px){
-        max-width: 400px;
-
-
-    };
 `;
 
 export const ProImg = styled.img`
