@@ -16,19 +16,20 @@ export const ProContainer = styled.div`
 
     @media screen and (max-width: 576px){
         height: 100%;
-
+        padding-bottom: 64px;
     };
 
 `;
 
 export const ProWrapper = styled.div`
     max-width: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 64px;
     padding: 0 45px;
-    margin: 0 auto;
+    
 
 
     @media screen and (min-width: 2560px){
@@ -49,8 +50,8 @@ export const ProWrapper = styled.div`
     @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1,20%);
-        grid-gap: 8px;
-        margin: 75px;
+        grid-gap: 64px;
+        margin:0 50px;
 
     };
 `;
