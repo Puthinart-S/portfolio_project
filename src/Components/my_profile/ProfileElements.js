@@ -65,7 +65,6 @@ export const ProContent = styled.div`
     margin: 20px;
     transition: all 0.2s ease-in-out;
     max-height: 300px;
-    max-width: 100vw;
     background: #00ff70dd;
     border-radius: 10px;
 
