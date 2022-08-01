@@ -265,7 +265,7 @@ export const Modal4 = ({ showModal4, setShowModal4 }) => {
                     <ModalContent>
                         <ProH1>Virtual Exhibition Web Application Framework</ProH1>
                         <ProP>We develop a demo 3D web application framework for virtual exhibitions and online stores.<br/> A framework is a tool for the organizer to set up a shop or event as well as an application for the customer.<br/> It allows customers to virtually visit the online event and maximize the user experience.<br/> In addition, virtually visiting the online event is safer in the Coronavirus epidemic.<br/><br/>
-                        Main language : React.js, Redux, Node.js, Express.js, MongoDB<br/><br/>
+                        Main language : React.js, Redux, Three.js, Node.js, Express.js, MongoDB<br/><br/>
                         <a href='https://drive.google.com/file/d/1Lt4N2MIMcpAQqubLgohjpnzp1-AFzMZ0/view' style={{display: "flex",  justifyContent: "center" }}>click to go to Github</a>
                         </ProP>
                     </ModalContent>
