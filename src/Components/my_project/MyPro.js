@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Img1 from './ImgPro/img11.png';
 import Img2 from './ImgPro/img12.png';
 import Img3 from './ImgPro/img13.png';
-import Img4 from './ImgPro/img14.jpg';
+import Img4 from './ImgPro/img14.png';
 import { MyprojectContainer, MyprojectH1, MyprojectWrapper, MyprojectCard, MyprojectImg, MyprojectH2, MyprojectP } from './MyProElements';
 import { Modal, Modal2, Modal3, Modal4 } from './projectlist/ProJectLists';
 
@@ -68,8 +68,8 @@ const MyPro = () => {
                     </MyprojectCard>
                     <MyprojectCard onClick={openModal4}>
                         <MyprojectImg src={Img4}/>
-                        <MyprojectH2>Swamp Ancient Ruin</MyprojectH2>
-                        <MyprojectP>Created Custom landscape game</MyprojectP>
+                        <MyprojectH2>Virtual Exhibition Web Application Framework</MyprojectH2>
+                        <MyprojectP>A 3D web application framework for virtual exhibitions and online stores</MyprojectP>
                         <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
                 </MyprojectWrapper>

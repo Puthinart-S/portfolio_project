@@ -20,25 +20,18 @@ const MyProfile = () => {
                         <ProImg src={BoatImg} alt='proj1'/>
                     <ProContent2>
                         <ProH22>Front-end Developer</ProH22>
-                        <ProH22>& UX/UI Designer</ProH22>
                     </ProContent2>
                     <ProContent>
                         <ProH2>About</ProH2>
                         <ProP>Name: Puthinart Sutjaridkidtikul</ProP>
                         <ProP>Nickname: Boat</ProP>
-                        <ProP>Age: 22</ProP>
                         <ProP>Date of Birth: 28 May 2000</ProP>
                     </ProContent>
                     <ProContent>
-                        <ProH2>Contact(Link)</ProH2>
-                        <IconWrapper>
-                        <LinkImg href="https://www.instagram.com/ptnrt.98o97t/"><ProIcons src={Icons} alt='ico1'/></LinkImg>
-                        <LinkImg href="https://www.facebook.com/boatchiremaz"><ProIcons2 src={Icons2} alt='ico2'/></LinkImg>
-                        <LinkImg href="https://github.com/Puthinart-S"><ProIcons3 src={Icons3} alt='ico3'/></LinkImg>
-                        </IconWrapper>
+                        <ProH2>Contact</ProH2>
                         <IconWrapper>
                         <LinkImg2 href="#"><ProIcons4 src={Icons4} alt='ico4'/><ProP3>+6681-559-1815</ProP3></LinkImg2>
-                        <LinkImg2 href="#"><ProIcons5 src={Icons5} alt='ico5'/><ProP3>boatkakkakmak@gmail.com</ProP3></LinkImg2>
+                        <LinkImg2 href="#"><ProIcons5 src={Icons5} alt='ico5'/><ProP3>puthinart.sut@gmail.com</ProP3></LinkImg2>
                         </IconWrapper>
                     </ProContent>
                     <ProContent>
@@ -48,9 +41,9 @@ const MyProfile = () => {
                     </ProContent>
                     <ProContent>
                         <ProH2>Skills</ProH2>
-                        <ProP>2D-3D Animation/Game Design/Web Design/AdobeXD/Figma</ProP>
-                        <ProP>HTML/CSS/JavaScript/Bootrap/PHP/Python/C++/MySQL</ProP>
-                        <ProP>React.js/Node.js/Express.js/MongoDB/Firebase</ProP>
+                        <ProP>AdobeXD/Figma</ProP>
+                        <ProP>HTML/CSS/JavaScript/PHP/Python/C++/Java/MySQL</ProP>
+                        <ProP>React/Node.js/Express.js/MongoDB/Firebase</ProP>
                     </ProContent>
                 </ProWrapper>
             </ProContainer>
