@@ -7,8 +7,8 @@ import { FaTimes } from 'react-icons/fa';
 
 
 const Background = styled.div`
-    width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     background: rgba(0,0,0,0.8);
     position: fixed;
     display: flex;
@@ -26,7 +26,8 @@ const Background = styled.div`
 `;
 
 const ModalWrapper = styled.div`
-    max-width: 100%;
+    max-width: 100vw;
+    max-height: 75vh;
     box-shadow: 0 5px 16px rgba(0,0,0,0.2);
     background: #000;
     color: #000;
@@ -69,7 +70,7 @@ const ModalContent = styled.div`
     line-height: 2.0;
     color: #fff;
     font-size: 1rem;
-    max-height: 475px;
+    max-height: 62.5vh;
     transition: all 0.2s ease-in-out;
     -ms-overflow-style: none;
     scrollbar-width: none;
