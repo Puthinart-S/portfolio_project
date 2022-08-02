@@ -37,22 +37,22 @@ export const ProContainer = styled.div`
 `;
 
 export const ProWrapper = styled.div`
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 64px;
-    padding: 0 45px;
-    margin: 0 auto;
+    padding: 2vw;
+    
 
     @media screen and (min-width: 2560px){
- 
-
+        margin: 300px;
+        grid-gap: 108px;
     };
    
 
     @media screen and (max-width: 992px){
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1,20%);
         grid-gap: 32px;
  
 
@@ -60,7 +60,6 @@ export const ProWrapper = styled.div`
 
     @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1, 10%);
         grid-gap: 24px;
 
     };
@@ -74,7 +73,8 @@ export const ProContent = styled.div`
     padding: 10px;
     margin: 20px;
     transition: all 0.2s ease-in-out;
-    max-height: 300px;
+    max-width: 100vw;
+    max-height: 25vh;
     background: #00ff70dd;
     border-radius: 10px;
     animation: ${animdiv1} 5s both;
@@ -87,8 +87,8 @@ export const ProContent = styled.div`
 `;
 
 export const ProImg = styled.img`
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin-bottom: -65px;
     transition: all 0.2s ease-in-out;
     border-radius: 1000px;
@@ -112,6 +112,7 @@ export const WrapHead = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    margin: 0 auto;
 
 `;
 
