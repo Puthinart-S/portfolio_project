@@ -1,39 +1,50 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const animdiv1 = keyframes`
+    0% {};
+    10% {};
+    20% {};
+    30% {};
+    40% {};
+    50% {};
+    60% {};
+    70% {};
+    80% {};
+    80% {};
+    100% {};
+`;
+
 
 export const ProContainer = styled.div`
-    max-width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #000;
     padding-bottom: 32px;
+    
 
     @media screen and (max-width: 992px){
-        height: 100%;
+
     };
 
     @media screen and (max-width: 576px){
-        height: 100%;
-        padding-bottom: 64px;
+
     };
 
 `;
 
 export const ProWrapper = styled.div`
-    max-width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 64px;
     padding: 0 45px;
-    
-
+    margin: 0 auto;
 
     @media screen and (min-width: 2560px){
-        margin: 155px;
  
 
     };
@@ -49,9 +60,8 @@ export const ProWrapper = styled.div`
 
     @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1,20%);
-        grid-gap: 64px;
-        margin:0 50px;
+        grid-template-rows: repeat(1, 10%);
+        grid-gap: 24px;
 
     };
 `;
@@ -67,6 +77,7 @@ export const ProContent = styled.div`
     max-height: 300px;
     background: #00ff70dd;
     border-radius: 10px;
+    animation: ${animdiv1} 5s both;
 
     &:hover{
         border-radius: 40px;
@@ -81,17 +92,27 @@ export const ProImg = styled.img`
     margin-bottom: -65px;
     transition: all 0.2s ease-in-out;
     border-radius: 1000px;
+
+    @media screen and (max-width: 992px){
+        width: 50%;
+        height: 50%;
+    };
+    @media screen and (max-width: 992px){
+        width: 50%;
+        height: 50%;
+    };
    
 `;
 
 export const WrapHead = styled.div`
-    width: 100%;
-    height: 50px;
+    min-width: 100vw;
+    max-height: 7.5vh;
     background: #00ff70dd;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+
 `;
 
 export const ProH1 = styled.h1`

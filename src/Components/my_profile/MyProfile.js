@@ -17,7 +17,9 @@ const MyProfile = () => {
                 <ProH1>Profile</ProH1>
                 </WrapHead>
                 <ProWrapper>
+                    <ProContent2>
                         <ProImg src={BoatImg} alt='proj1'/>
+                    </ProContent2>
                     <ProContent2>
                         <ProH22>Front-end Developer</ProH22>
                     </ProContent2>

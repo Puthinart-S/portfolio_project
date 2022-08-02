@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const MyprojectContainer = styled.div`
-    max-width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,17 +11,14 @@ export const MyprojectContainer = styled.div`
     padding-bottom: 32px;
 
     @media screen and (max-width: 992px){
-        height: 100%;
     };
 
     @media screen and (max-width: 576px){
-        height: 100%;
         padding-bottom: 64px;
     };
 `;
 
 export const MyprojectWrapper = styled.div`
-    max-width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

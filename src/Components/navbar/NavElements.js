@@ -5,7 +5,7 @@ import { Link as LinkR } from 'react-router-dom';
 
 export const Nav = styled.nav`
     background: #000;
-    height: 60px;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    max-width: 100%;
+    min-width: 100vw;
 
     @media screen and (max-width: 992px) {
         transition: 0.6s all ease;
@@ -22,11 +22,10 @@ export const Nav = styled.nav`
 export const NaviContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 8vh;
     z-index: 1;
-    width: 100%;
+    min-width: 100vw;
     padding: 0 24px;
-    max-width: 100%;
 `;
 
 export const NavLogo = styled.div`

@@ -3,16 +3,16 @@ import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 
 export const SidebarBody = styled.div`
-    max-width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    max-height: 100vh;
     overflow-y: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
 `;
 
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 9999999;
-    width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     background: #0d0d0d;
     display: grid;
     align-items: center;
