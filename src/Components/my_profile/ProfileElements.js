@@ -87,8 +87,8 @@ export const ProContent = styled.div`
 `;
 
 export const ProImg = styled.img`
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 75%;
+    max-height: 75%;
     margin-bottom: -65px;
     transition: all 0.2s ease-in-out;
     border-radius: 1000px;
