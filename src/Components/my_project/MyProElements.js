@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const MyprojectContainer = styled.div`
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,8 +23,9 @@ export const MyprojectWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center;
     grid-gap: 32px;
-    padding: 0 75px;
+    padding: 0 7.5vw;
 
     @media screen and (min-width: 2560px){
         margin: 300px;
@@ -49,7 +50,7 @@ export const MyprojectCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 25px;
-    max-width: 100vw;
+    max-width: 100%;
     max-height: 50vh;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -90,6 +91,10 @@ export const MyprojectH2 = styled.h2`
 
 export const MyprojectP = styled.p`
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.85rem;
     text-align: center;
+
+    @media screen and (max-width: 576px){
+        font-size: 0.75rem;
+    };
 `;

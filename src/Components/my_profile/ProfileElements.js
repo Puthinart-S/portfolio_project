@@ -16,8 +16,8 @@ const animdiv1 = keyframes`
 
 
 export const ProContainer = styled.div`
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,13 +37,11 @@ export const ProContainer = styled.div`
 `;
 
 export const ProWrapper = styled.div`
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 64px;
-    padding: 2vw;
-    
+    justify-items: center;
+    grid-gap: 64px;    
 
     @media screen and (min-width: 2560px){
         margin: 300px;
@@ -52,6 +50,7 @@ export const ProWrapper = styled.div`
    
 
     @media screen and (max-width: 992px){
+        margin: 0 50vw;
         grid-template-columns: 1fr;
         grid-gap: 32px;
  
@@ -59,6 +58,7 @@ export const ProWrapper = styled.div`
     };
 
     @media screen and (max-width: 576px){
+        margin: 0 100vw;
         grid-template-columns: 1fr;
         grid-gap: 24px;
 
@@ -70,11 +70,11 @@ export const ProContent = styled.div`
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px;
-    margin: 20px;
+    padding: 1vw;
+    margin: 2vw;
     transition: all 0.2s ease-in-out;
-    max-width: 100vw;
-    max-height: 25vh;
+    max-width: 75%;
+    max-height: 40vh;
     background: #00ff70dd;
     border-radius: 10px;
     animation: ${animdiv1} 5s both;
@@ -83,6 +83,14 @@ export const ProContent = styled.div`
         border-radius: 40px;
         border: 3px solid #ff00ff;
     }
+
+    @media screen and (max-width: 992px){
+        max-width: 100%;
+    };
+
+    @media screen and (max-width: 576px){
+        max-width: 100%;
+    };
     
 `;
 
@@ -97,7 +105,7 @@ export const ProImg = styled.img`
         width: 50%;
         height: 50%;
     };
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 576px){
         width: 50%;
         height: 50%;
     };
@@ -105,45 +113,48 @@ export const ProImg = styled.img`
 `;
 
 export const WrapHead = styled.div`
-    min-width: 100vw;
-    max-height: 7.5vh;
+    min-width: 100%;
+    max-height: 9vh;
     background: #00ff70dd;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 1.75vw;
     margin: 0 auto;
+    position: relative;
+    bottom: 1vw;
 
 `;
 
 export const ProH1 = styled.h1`
     font-size: 2.5rem;
     color: #000;
-    margin-top: 16px;
-    margin-bottom: 32px;
-
+    margin-top: 1vw;
+    margin-bottom: 2vw;
     @media screen and (max-width: 576px){
-        font-size: 2.5rem;
+        font-size: 2rem;
     };
+
+
 `;
 
 export const ProH2 = styled.h2`
     font-size: 2rem;
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin-top: 0.25vw;
+    margin-bottom: 1vw;
     color: #000;
+    text-align: center;
     @media screen and (max-width: 576px){
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     };
 
 `;
 
 export const ProP = styled.p`
     font-size: 1rem;
-    text-align: center;
     color: #000;
     @media screen and (max-width: 576px){
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     };
 `;
 
@@ -281,9 +292,9 @@ export const ProContent2 = styled.div`
 `;
 
 export const ProH22 = styled.h2`
-    font-size: 2rem;
-    margin-top: 16px;
-    margin-bottom: 32px;
+    font-size: 2.25rem;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
     color: #fff;
     cursor: pointer;
 
@@ -293,7 +304,7 @@ export const ProH22 = styled.h2`
     }
 
     @media screen and (max-width: 576px){
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     };
 
 `;

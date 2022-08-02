@@ -25,9 +25,9 @@ const MyProfile = () => {
                     </ProContent2>
                     <ProContent>
                         <ProH2>About</ProH2>
-                        <ProP>Name: Puthinart Sutjaridkidtikul</ProP>
-                        <ProP>Nickname: Boat</ProP>
-                        <ProP>Date of Birth: 28 May 2000</ProP>
+                        <ProP>Name: Puthinart Sutjaridkidtikul<br/>
+                        Nickname: Boat<br/>
+                        Date of Birth: 28 May 2000</ProP>
                     </ProContent>
                     <ProContent>
                         <ProH2>Contact</ProH2>
@@ -38,14 +38,14 @@ const MyProfile = () => {
                     </ProContent>
                     <ProContent>
                         <ProH2>Education</ProH2>
-                        <ProP>2018 - 2022 King Mongkut's Institute of Technology Ladkrabang</ProP>
-                        <ProP>2012 - 2017 Bodindecha (Sing Singhaseni) School </ProP>
+                        <ProP>2018 - 2022 King Mongkut's Institute of Technology Ladkrabang <br/>
+                        2012 - 2017 Bodindecha (Sing Singhaseni) School </ProP>
                     </ProContent>
                     <ProContent>
                         <ProH2>Skills</ProH2>
-                        <ProP>AdobeXD/Figma</ProP>
-                        <ProP>HTML/CSS/JavaScript/PHP/Python/C++/Java/MySQL</ProP>
-                        <ProP>React/Node.js/Express.js/MongoDB/Firebase</ProP>
+                        <ProP> - AdobeXD, Figma<br/>
+                         - HTML, CSS, JavaScript, PHP, Python, C++, Java, MySQL<br/>
+                         - React, Node.js, Express.js, MongoDB, Firebase</ProP>
                     </ProContent>
                 </ProWrapper>
             </ProContainer>

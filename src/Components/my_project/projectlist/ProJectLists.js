@@ -43,7 +43,6 @@ const ModalWrapper = styled.div`
 
     @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1,33%);
         grid-gap: 32px;
         margin-bottom: 75px;
     };
@@ -114,8 +113,9 @@ const CloseModalButton = styled(FaTimes)`
 const ProP = styled.p`
     font-size: 1rem;
     color: #fff;
+    padding: 1vw;
     @media screen and (max-width: 576px){
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     };
 `;
 const ProH1 = styled.h1`
@@ -124,7 +124,7 @@ const ProH1 = styled.h1`
     padding: 1vw;
 
     @media screen and (max-width: 576px){
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     };
 `;
 
