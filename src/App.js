@@ -33,7 +33,7 @@ class App extends Component {
               <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.pathname}>
                 <Route exact path="/" component={Profile} />
-                <Route path="/MyProject" component={MyProject} />
+                <Route exact path="/MyProject" component={MyProject} />
                 <Route component={NoMatch} />
               </Switch>
               </AnimatePresence>

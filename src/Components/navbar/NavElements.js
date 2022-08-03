@@ -85,7 +85,12 @@ export const NavLink = styled(LinkR)`
      height: 100px;
      cursor: pointer;
 
-     &:hover{
+    &:hover {
+        text-decoration: none;
+        color: #cc00ff;    
+    }
+
+    &.active{
         color: #00ff70dd;
-     }
+    }
 `

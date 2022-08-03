@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import { Nav, NaviContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLink} from './NavElements'
 
 
 
 
 const NaviBar = ({ toggle }) => {
+
     return(
         <Nav>
             <NaviContainer>
@@ -15,10 +17,10 @@ const NaviBar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLink to="/">Profile</NavLink>
+                        <NavLink exact to="/" style={isActive => ({ color: isActive ? "#00ff70dd" : "#fff" })}>Profile</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/MyProject">MyProject</NavLink>
+                        <NavLink exact to="/MyProject" style={isActive => ({ color: isActive ? "#00ff70dd" : "#fff" })}>MyProject</NavLink>
                     </NavItem>
                 </NavMenu>
             </NaviContainer>
