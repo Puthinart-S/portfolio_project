@@ -8,6 +8,23 @@ import { Modal, Modal2, Modal3, Modal4 } from './projectlist/ProJectLists';
 
 
 const MyPro = () => {
+
+    const transitionEnter = { duration: 0.25, ease: [1, 0.3, 0.5, 0.7] };
+    const transitionExit = { duration: 0.25, ease: [0.8, 0.4, 0.1, 0.2] };
+    const contentsVariants = {
+    initial: { scale: 1, opacity: 0 },
+    enter: { 
+        scale: 1, 
+        opacity: 1, 
+        transition: { duration: 1, ...transitionEnter }
+    },
+    exit: {
+      scale: 0.5,
+      opacity: 0,
+      transition: { duration: 1, ...transitionExit }
+    }
+  };
+
     const [showModal, setShowModal] = useState(false);
 
     const openModal = () => {
@@ -46,27 +63,34 @@ const MyPro = () => {
             <Modal4 showModal4={showModal4} setShowModal4={setShowModal4}/>
             <MyprojectContainer id="myproj">
                 <MyprojectH1>My Project</MyprojectH1>
-                <MyprojectWrapper>
-                    <MyprojectCard onClick={openModal}>
+                <MyprojectWrapper
+                    initial="initial"
+                    animate="enter"
+                    enter="enter"
+                    exit="exit"
+                    variants={{ enter: { transition: { staggerChildren: 0.1 } }, 
+                                exit: { transition: { staggerChildren: 0.1 } } }}
+                >
+                    <MyprojectCard onClick={openModal} variants={contentsVariants}>
                         <MyprojectImg src={Img1}/>
                         <MyprojectH2>World-Cup-Analysis</MyprojectH2>
                         <MyprojectP>Website that bringing matches In the FIFA World Cup from 1930 to 2018, 
                             analyse the places and display them in the most likely parts of the world.</MyprojectP>
                         <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
-                    <MyprojectCard onClick={openModal2}>
+                    <MyprojectCard onClick={openModal2} variants={contentsVariants}>
                         <MyprojectImg src={Img2}/>
                         <MyprojectH2>History of Computer</MyprojectH2>
                         <MyprojectP>Website for learning about computer</MyprojectP>
                         <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
-                    <MyprojectCard onClick={openModal3}>
+                    <MyprojectCard onClick={openModal3} variants={contentsVariants}>
                         <MyprojectImg src={Img3}/>
                         <MyprojectH2>BKK Crime Scene</MyprojectH2>
                         <MyprojectP>Website for arouse people to have an awareness.</MyprojectP>
                         <MyprojectH2>Click for More Info </MyprojectH2>
                     </MyprojectCard>
-                    <MyprojectCard onClick={openModal4}>
+                    <MyprojectCard onClick={openModal4} variants={contentsVariants}>
                         <MyprojectImg src={Img4}/>
                         <MyprojectH2>Virtual Exhibition Web Application Framework</MyprojectH2>
                         <MyprojectP>A 3D web application framework for virtual exhibitions and online stores</MyprojectP>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 export const MyprojectContainer = styled.div`
     min-width: 100%;
@@ -18,7 +19,7 @@ export const MyprojectContainer = styled.div`
     };
 `;
 
-export const MyprojectWrapper = styled.div`
+export const MyprojectWrapper = styled(motion.div)`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +44,7 @@ export const MyprojectWrapper = styled.div`
     };
 `;
 
-export const MyprojectCard = styled.div`
+export const MyprojectCard = styled(motion.div)`
     background: #000;
     display: flex;
     flex-flow: column nowrap;

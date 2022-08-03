@@ -1,18 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-
-const animdiv1 = keyframes`
-    0% {};
-    10% {};
-    20% {};
-    30% {};
-    40% {};
-    50% {};
-    60% {};
-    70% {};
-    80% {};
-    80% {};
-    100% {};
-`;
+import { motion } from 'framer-motion/dist/framer-motion';
 
 
 export const ProContainer = styled.div`
@@ -36,7 +23,7 @@ export const ProContainer = styled.div`
 
 `;
 
-export const ProWrapper = styled.div`
+export const ProWrapper = styled(motion.div)`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -65,7 +52,8 @@ export const ProWrapper = styled.div`
     };
 `;
 
-export const ProContent = styled.div`
+
+export const ProContent = styled(motion.div)`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -77,7 +65,6 @@ export const ProContent = styled.div`
     max-height: 40vh;
     background: #00ff70dd;
     border-radius: 10px;
-    animation: ${animdiv1} 5s both;
 
     &:hover{
         border-radius: 40px;
@@ -279,7 +266,7 @@ export const LinkImg2 = styled.a`
 
 `;
 
-export const ProContent2 = styled.div`
+export const ProContent2 = styled(motion.div)`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
