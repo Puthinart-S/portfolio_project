@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import Icons from '../ImgPro/github.png';
 import Icons2 from '../ImgPro/web.png';
+import Icons3 from '../ImgPro/demo.png';
 
 
 
@@ -298,7 +299,7 @@ export const Modal4 = ({ showModal4, setShowModal4 }) => {
                         Database: MongoDB<br/><br/>
                         <div style={{display: "flex",  justifyContent: "space-around"}} >
                                 <ProIcons src={Icons} alt='ico' onClick={() => window.open('https://github.com/Nomoki/WebappVEX', '_blank')}/>
-                                <ProIcons src={Icons2} alt='ico2' onClick={() => window.open('#', '_blank')}/>
+                                <ProIcons src={Icons3} alt='ico3' onClick={() => window.open('https://drive.google.com/file/d/1eEvF9pswEARX3bOLFICn0bb5ieviPEUZ/view?usp=sharing', '_blank')}/>
                         </div>
                         </ProP>
                     </ModalContent>
