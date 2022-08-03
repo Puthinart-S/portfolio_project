@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import {useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
-
+import Icons from '../ImgPro/github.png';
+import Icons2 from '../ImgPro/web.png';
 
 
 
@@ -128,6 +129,23 @@ const ProH1 = styled.h1`
     };
 `;
 
+const ProIcons = styled.img`
+    width: 10%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 100%;
+
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 25%;
+    }
+
+    @media screen and (max-width: 576px){
+        width: 10%;
+        height: 10%;
+    }
+`;
+
 export const Modal = ({ showModal, setShowModal }) => {
     const modelRef = useRef()
 
@@ -151,11 +169,14 @@ export const Modal = ({ showModal, setShowModal }) => {
                         <ProP>Take the information of every match of the World Cup and draw on the parts that people are likely 
                             interested in creating a graph and searching for analysis. <br/>
                                &nbsp;&nbsp;&nbsp; - Graph the number of championships that each team has. <br/>
-                               &nbsp;&nbsp;&nbsp; - Graph the number of matches won, lost, and draws of each team, &nbsp;&nbsp;&nbsp;ranked according to the number of matches. <br/>
+                               &nbsp;&nbsp;&nbsp; - Graph the number of matches won, lost, and draws of each team, ranked according to the number of matches. <br/>
                                &nbsp;&nbsp;&nbsp; - Graph the total number of goals each team has scored. <br/><br/>
-                            Main language : Python <br/>
-                            Other language : HTML, CSS and JavaScript <br/><br/>
-                            <a href='https://github.com/Puthinart-S/World-Cup-Analysis' style={{display: "flex",  justifyContent: "center" }} >click to go to Github</a>
+                            Front-end languages : HTML, CSS and JavaScript<br/>
+                            Back-end language : Python<br/><br/>
+                            <div style={{display: "flex",  justifyContent: "space-around"}} >
+                                <ProIcons src={Icons} alt='ico' onClick={() => window.open('https://github.com/Puthinart-S/World-Cup-Analysis', '_blank')}/>
+                                <ProIcons src={Icons2} alt='ico2' onClick={() => window.open('https://www.it.kmitl.ac.th/~it61070185//webpro/index.html?fbclid=IwAR2rIiV5ytKqncS32vdFYGn4jnqPJHpVQAAGkBGykM28_MbNN0tbU3qxcXo', '_blank')}/>
+                            </div>
                         </ProP> 
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal
@@ -191,8 +212,11 @@ export const Modal2 = ({ showModal2, setShowModal2 }) => {
                     <ModalContent>
                         <ProH1>History of Computer</ProH1>
                         <ProP>Website about history of computer in every era with some gimmicks<br/><br/>
-                        Main language : HTML, CSS and JavaScript <br/><br/>
-                        <a href='https://hiscom.netlify.app/' style={{display: "flex",  justifyContent: "center" }}>click to go to Website</a>
+                        Front-end languages: HTML, CSS and JavaScript <br/><br/>
+                        <div style={{display: "flex",  justifyContent: "space-around"}} >
+                                <ProIcons src={Icons} alt='ico' onClick={() => window.open('https://github.com/sutha001/HistoryCom', '_blank')}/>
+                                <ProIcons src={Icons2} alt='ico2' onClick={() => window.open('https://hiscom.netlify.app/', '_blank')}/>
+                        </div>
                         </ProP>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal2
@@ -228,8 +252,11 @@ export const Modal3 = ({ showModal3, setShowModal3 }) => {
                     <ModalContent>
                         <ProH1>BKK Crime Scene</ProH1>
                         <ProP>Website about problem of road in Bangkok that must solve with some gimmicks<br/><br/>
-                        Main language : HTML, CSS and JavaScript<br/><br/>
-                        <a href='https://bkkcrimescene.netlify.app/' style={{display: "flex",  justifyContent: "center" }}>click to go to Website</a>
+                        Front-end languages: HTML, CSS and JavaScript<br/><br/>
+                        <div style={{display: "flex",  justifyContent: "space-around"}} >
+                                <ProIcons src={Icons} alt='ico' onClick={() => window.open('https://github.com/sutha001/Goodhealthandwellbeing', '_blank')}/>
+                                <ProIcons src={Icons2} alt='ico2' onClick={() => window.open('https://bkkcrimescene.netlify.app/', '_blank')}/>
+                        </div>
                         </ProP>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal3
@@ -266,8 +293,13 @@ export const Modal4 = ({ showModal4, setShowModal4 }) => {
                     <ModalContent>
                         <ProH1>Virtual Exhibition Web Application Framework</ProH1>
                         <ProP>We develop a demo 3D web application framework for virtual exhibitions and online stores.<br/> A framework is a tool for the organizer to set up a shop or event as well as an application for the customer.<br/> It allows customers to virtually visit the online event and maximize the user experience.<br/> In addition, virtually visiting the online event is safer in the Coronavirus epidemic.<br/><br/>
-                        Main language : React.js, Redux, Three.js, Node.js, Express.js, MongoDB<br/><br/>
-                        <a href='https://github.com/Nomoki/WebappVEX' style={{display: "flex",  justifyContent: "center" }}>click to go to Github</a>
+                        Front-end languages: React.js, Redux and Three.js<br/>
+                        Back-end languages: Node.js and Express.js<br/>
+                        Database: MongoDB<br/><br/>
+                        <div style={{display: "flex",  justifyContent: "space-around"}} >
+                                <ProIcons src={Icons} alt='ico' onClick={() => window.open('https://github.com/Nomoki/WebappVEX', '_blank')}/>
+                                <ProIcons src={Icons2} alt='ico2' onClick={() => window.open('#', '_blank')}/>
+                        </div>
                         </ProP>
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal4

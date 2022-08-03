@@ -56,20 +56,25 @@ const MyProfile = () => {
                     <ProContent variants={contentsVariants}>
                         <ProH2>Contact</ProH2>
                         <IconWrapper>
-                        <LinkImg2 href="#"><ProIcons4 src={Icons4} alt='ico4'/><ProP3>+6681-559-1815</ProP3></LinkImg2>
-                        <LinkImg2 href="#"><ProIcons5 src={Icons5} alt='ico5'/><ProP3>puthinart.sut@gmail.com</ProP3></LinkImg2>
+                        <LinkImg2 ><ProIcons4 src={Icons4} alt='ico4'/><ProP3>+6681-559-1815</ProP3></LinkImg2>
+                        <LinkImg2 ><ProIcons5 src={Icons5} alt='ico5'/><ProP3>puthinart.sut@gmail.com</ProP3></LinkImg2>
                         </IconWrapper>
                     </ProContent>
                     <ProContent variants={contentsVariants}>
                         <ProH2>Education</ProH2>
-                        <ProP>2018 - 2022 King Mongkut's Institute of Technology Ladkrabang <br/>
-                        2012 - 2017 Bodindecha (Sing Singhaseni) School </ProP>
+                        <ProP><ProP style={{ fontWeight: 'bold' }}>2018 - 2022</ProP>&nbsp;&nbsp;&nbsp;King Mongkut's Institute of Technology Ladkrabang</ProP>
+                        <ProP><ProP style={{ fontWeight: 'bold' }}>2012 - 2017</ProP>&nbsp;&nbsp;&nbsp;Bodindecha (Sing Singhaseni) School </ProP>
                     </ProContent>
                     <ProContent variants={contentsVariants}>
                         <ProH2>Skills</ProH2>
-                        <ProP> - AdobeXD, Figma<br/>
-                         - HTML, CSS, JavaScript, PHP, Python, C++, Java, MySQL<br/>
-                         - React, Node.js, Express.js, MongoDB, Firebase</ProP>
+                        <ProP> <ProP style={{ fontWeight: 'bold' }}>Front-end languages</ProP>
+                        &nbsp;&nbsp;&nbsp;- HTML, CSS, JavaScript, React</ProP>
+                        <ProP> <ProP style={{ fontWeight: 'bold' }}>Back-end languages</ProP>
+                        &nbsp;&nbsp;&nbsp;- Node.js, Express.js, Python, Java and C++</ProP>
+                        <ProP> <ProP style={{ fontWeight: 'bold' }}>Database</ProP>
+                        &nbsp;&nbsp;&nbsp;- MongoDB, Firebase and MySQL</ProP>
+                        <ProP> <ProP style={{ fontWeight: 'bold' }}>Tools</ProP>
+                        &nbsp;&nbsp;&nbsp;- AdobeXD and Figma</ProP>
                     </ProContent>
                 </ProWrapper>
             </ProContainer>

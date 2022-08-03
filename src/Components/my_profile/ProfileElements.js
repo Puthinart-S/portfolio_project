@@ -28,7 +28,8 @@ export const ProWrapper = styled(motion.div)`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    grid-gap: 64px;    
+    grid-gap: 32px;
+    width: 100%;
 
     @media screen and (min-width: 2560px){
         margin: 300px;
@@ -40,7 +41,7 @@ export const ProWrapper = styled(motion.div)`
         margin: 0 50vw;
         grid-template-columns: 1fr;
         grid-gap: 32px;
- 
+        max-width: 60%;
 
     };
 
@@ -55,16 +56,18 @@ export const ProWrapper = styled(motion.div)`
 
 export const ProContent = styled(motion.div)`
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start;
     padding: 1vw;
     margin: 2vw;
     transition: all 0.2s ease-in-out;
-    max-width: 75%;
-    max-height: 40vh;
+    max-width: 100%;
+    max-height: 100vh;
     background: #00ff70dd;
     border-radius: 10px;
+    column-gap: 0.25vw;
+    row-gap: 0.01vw;
 
     &:hover{
         border-radius: 40px;
@@ -82,15 +85,15 @@ export const ProContent = styled(motion.div)`
 `;
 
 export const ProImg = styled.img`
-    max-width: 75%;
-    max-height: 75%;
+    width: 75%;
+    height: 75%;
     margin-bottom: -65px;
     transition: all 0.2s ease-in-out;
     border-radius: 1000px;
 
     @media screen and (max-width: 992px){
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
     };
     @media screen and (max-width: 576px){
         width: 50%;
@@ -201,12 +204,16 @@ export const ProIcons3 = styled.img`
 `;
 
 export const ProIcons4 = styled.img`
-    width: 22.5%;
-    height: 22.5%;
+    width: 3vw;
+    height: 3vw;
 
     &:hover{
         background-color: #cc00ff;
         border-radius: 50px;
+    }
+    @media screen and (max-width: 922px){
+        width: 5vw;
+        height: 5vw;
     }
 
     @media screen and (max-width: 576px){
@@ -216,12 +223,17 @@ export const ProIcons4 = styled.img`
 `;
 
 export const ProIcons5 = styled.img`
-    width: 20%;
-    height: 20%;
+    width: 3vw;
+    height: 3vw;
 
     &:hover{
         background-color: #cc00ff;
         border-radius: 50px;
+    }
+
+    @media screen and (max-width: 922px){
+        width: 5vw;
+        height: 5vw;
     }
 
     @media screen and (max-width: 576px){
@@ -232,9 +244,17 @@ export const ProIcons5 = styled.img`
 
 export const IconWrapper = styled.div`
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    row-gap: 1vw;
+    column-gap: 2vw;
+
+    @media screen and (max-width: 992px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     @media screen and (max-width: 576px){
         flex-direction: column;
@@ -263,19 +283,28 @@ export const LinkImg2 = styled.a`
      text-decoration: none;
      list-style: none;
      padding: 0;
+     row-gap: 0.5vw;
 
 `;
 
 export const ProContent2 = styled(motion.div)`
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 20px;
+    padding: 1vw;
+    margin: 1vw;
     transition: all 0.2s ease-in-out;
-    max-height: 280px;
+    max-width: 100%;
+    max-height: 100vh;
     border-radius: 10px;
+    column-gap: 0.25vw;
+    row-gap: 0.01vw;
+
+    @media screen and (max-width: 576px){
+        padding: 3vw;
+        margin: 4vw;
+    };
 `;
 
 export const ProH22 = styled.h2`
