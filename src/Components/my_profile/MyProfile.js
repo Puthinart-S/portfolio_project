@@ -58,7 +58,7 @@ const MyProfile = () => {
                         <ProP>Name: Puthinart Sutjaridkidtikul<br/>
                         Nickname: Boat<br/>
                         Date of Birth: 28 May 2000</ProP>
-                        <ProP style={{ fontWeight: 'bold' }}>Here my resume:</ProP>
+                        <ProP style={{ fontWeight: 'bold' }}>My resume:</ProP>
                         <IconWrapper>
                         <LinkImg2 ><a href={pdf} target="_blank" rel="noreferrer"><ProIcons6 src={Icons6} alt='ico6'/></a></LinkImg2>
                         </IconWrapper>
