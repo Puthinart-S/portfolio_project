@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components';
+import { NavLink as LinkR } from 'react-router-dom';
 // import { Link as LinkS} from 'react-scroll';
 
 
@@ -72,7 +72,15 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 80px;
+    width: 7vw;
+    height: 1.75vw;
+`;
+
+const anim = keyframes`
+    0% { color: #00ff70dd; background: #000;}
+    50% { color: #000; background: #00ff70dd;}
+    100% { color: #00ff70dd; background: #000;}
+
 `;
 
 export const NavLink = styled(LinkR)`
@@ -82,7 +90,8 @@ export const NavLink = styled(LinkR)`
      justify-content: center;
      text-decoration: none;
      padding: 0 1.5rem;
-     height: 100px;
+     height: 2.75vw;
+     width: 5.5vw;
      cursor: pointer;
 
     &:hover {
@@ -91,6 +100,10 @@ export const NavLink = styled(LinkR)`
     }
 
     &.active{
-        color: #00ff70dd;
+        background: #00ff70dd;
+        border-radius: 25vw;
+        animation: ${anim} 7s cubic-bezier(0.7, 0.5, 0.3, 0.95) infinite;
     }
+
 `
+

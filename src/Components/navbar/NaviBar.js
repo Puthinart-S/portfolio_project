@@ -17,10 +17,10 @@ const NaviBar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLink exact to="/" style={isActive => ({ color: isActive ? "#00ff70dd" : "#fff" })}>Profile</NavLink>
+                        <NavLink exact to="/" >Profile</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink exact to="/MyProject" style={isActive => ({ color: isActive ? "#00ff70dd" : "#fff" })}>MyProject</NavLink>
+                        <NavLink exact to="/MyProject" >MyProject</NavLink>
                     </NavItem>
                 </NavMenu>
             </NaviContainer>
