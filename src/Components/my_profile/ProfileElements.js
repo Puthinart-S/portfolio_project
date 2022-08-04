@@ -85,19 +85,18 @@ export const ProContent = styled(motion.div)`
 `;
 
 export const ProImg = styled.img`
-    width: 75%;
-    height: 75%;
+    max-width: 100%;
+    max-height: 100%;
     margin-bottom: -65px;
     transition: all 0.2s ease-in-out;
     border-radius: 1000px;
 
     @media screen and (max-width: 992px){
-        width: 100%;
-        height: 100%;
+        width: 100%
     };
     @media screen and (max-width: 576px){
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        
     };
    
 `;
@@ -159,8 +158,7 @@ export const ProP3 = styled.p`
 `;
 
 export const ProIcons = styled.img`
-    width: 30%;
-    height: 30%;
+    width: 15%;
 
     &:hover{
         background-color: #cc00ff;
@@ -174,8 +172,7 @@ export const ProIcons = styled.img`
 `;
 
 export const ProIcons2 = styled.img`
-    width: 30%;
-    height: 30%;
+    width: 15%;
 
     &:hover{
         background-color: #cc00ff;
@@ -189,8 +186,7 @@ export const ProIcons2 = styled.img`
 `;
 
 export const ProIcons3 = styled.img`
-    width: 30%;
-    height: 30%;
+    width: 15%;
 
     &:hover{
         background-color: #cc00ff;
@@ -204,27 +200,23 @@ export const ProIcons3 = styled.img`
 `;
 
 export const ProIcons4 = styled.img`
-    width: 3vw;
-    height: 3vw;
+    width: 15%;
 
     &:hover{
         background-color: #cc00ff;
         border-radius: 50px;
     }
     @media screen and (max-width: 922px){
-        width: 5vw;
-        height: 5vw;
+        width: 15%;
     }
 
     @media screen and (max-width: 576px){
-        width: 10%;
-        height: 10%;
+        width: 25%;
     }
 `;
 
 export const ProIcons5 = styled.img`
-    width: 3vw;
-    height: 3vw;
+    width: 15%;
 
     &:hover{
         background-color: #cc00ff;
@@ -232,32 +224,26 @@ export const ProIcons5 = styled.img`
     }
 
     @media screen and (max-width: 922px){
-        width: 5vw;
-        height: 5vw;
+        width: 15%;
     }
 
     @media screen and (max-width: 576px){
-        width: 10%;
-        height: 10%;
-    }
+        width: 25%;
 `;
 
 export const ProIcons6 = styled.img`
-    width: 3vw;
-    height: 3vw;
+    width: 15%;
 
     &:hover{
         background-color: #cc00ff;
         border-radius: 30%;
     }
     @media screen and (max-width: 922px){
-        width: 5vw;
-        height: 5vw;
+        width: 15%;
     }
 
     @media screen and (max-width: 576px){
-        width: 10%;
-        height: 10%;
+        width: 25%;
     }
 `;
 

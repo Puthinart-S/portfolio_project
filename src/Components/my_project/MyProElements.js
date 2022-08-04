@@ -52,7 +52,7 @@ export const MyprojectCard = styled(motion.div)`
     align-items: center;
     border-radius: 25px;
     max-width: 100%;
-    max-height: 50vh;
+    max-height: 100%;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
