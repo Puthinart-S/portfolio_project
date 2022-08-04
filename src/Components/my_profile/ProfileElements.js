@@ -63,7 +63,7 @@ export const ProContent = styled(motion.div)`
     margin: 2vw;
     transition: all 0.2s ease-in-out;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     background: #00ff70dd;
     border-radius: 10px;
     column-gap: 0.25vw;
@@ -296,7 +296,7 @@ export const ProContent2 = styled(motion.div)`
     margin: 1vw;
     transition: all 0.2s ease-in-out;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     border-radius: 10px;
     column-gap: 0.25vw;
     row-gap: 0.01vw;

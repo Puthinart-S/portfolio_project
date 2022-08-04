@@ -64,7 +64,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: -1vw;
 
     @media screen and (max-width: 576px){
         display: none;
@@ -74,6 +74,11 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     width: 7vw;
     height: 1.75vw;
+    margin: 1vw;
+
+    @media screen and (max-width: 992px) {
+        height: 1vw;
+    }
 `;
 
 const anim = keyframes`
@@ -103,6 +108,11 @@ export const NavLink = styled(LinkR)`
         background: #00ff70dd;
         border-radius: 25vw;
         animation: ${anim} 7s cubic-bezier(0.7, 0.5, 0.3, 0.95) infinite;
+    }
+
+    @media screen and (max-width: 992px) {
+        height: 2.75vw;
+        width: 7.5vw;
     }
 
 `

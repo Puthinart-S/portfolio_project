@@ -11,19 +11,22 @@ import { ProContainer, ProImg, ProWrapper, ProContent, ProContent2, ProP, ProH1,
 
 const MyProfile = () => {
 
-    const transitionEnter = { duration: 0.25, ease: [1, 0.3, 0.5, 0.7] };
+
+    const transitionEnter = { duration: 0.25, ease: [0.4, 0.45, 0.55, 0.6] };
     const transitionExit = { duration: 0.25, ease: [0.8, 0.4, 0.1, 0.2] };
     const contentsVariants = {
-    initial: { scale: 1, opacity: 0 },
+    initial: { scale: 0, opacity: 0 },
     enter: { 
-        scale: 1, 
         opacity: 1, 
-        transition: { duration: 1, ...transitionEnter }
+        transition: { duration: 0.01, ...transitionEnter, type: "spring" },
+        x: [-500, -500, -500, -500, -500, -400, -200, -150, 0, 0, 0, 0, 0],
+        y: [-1000, -800, -600, -400, -500, -400, -200, -150, 0, -150, 0, -100, 0],
+        scale: [0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.8, 0.9, 1, 3, 2.75, 1.25, 1],
     },
     exit: {
       scale: 0.5,
       opacity: 0,
-      transition: { duration: 1, ...transitionExit }
+      transition: { duration: 1, ...transitionExit, type: "spring" }
     }
   };
 
@@ -38,7 +41,7 @@ const MyProfile = () => {
                     animate="enter"
                     enter="enter"
                     exit="exit"
-                    variants={{ enter: { transition: { staggerChildren: 0.1 } }, 
+                    variants={{ enter: { transition: { staggerChildren: 0.5 } }, 
                                 exit: { transition: { staggerChildren: 0.1 } } }}
                 >
                     <ProContent2 variants={contentsVariants}>
