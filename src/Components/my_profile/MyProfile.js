@@ -72,7 +72,7 @@ const MyProfile = () => {
                     </ProContent>
                     <ProContent variants={contentsVariants}>
                         <ProH2>Education</ProH2>
-                        <ProP><ProP style={{ fontWeight: 'bold' }}>2018 - 2022</ProP>&nbsp;&nbsp;&nbsp;King Mongkut's Institute of Technology Ladkrabang</ProP>
+                        <ProP><ProP style={{ fontWeight: 'bold' }}>2018 - 2021</ProP>&nbsp;&nbsp;&nbsp;King Mongkut's Institute of Technology Ladkrabang</ProP>
                         <ProP><ProP style={{ fontWeight: 'bold' }}>2012 - 2017</ProP>&nbsp;&nbsp;&nbsp;Bodindecha (Sing Singhaseni) School </ProP>
                     </ProContent>
                     <ProContent variants={contentsVariants}>
