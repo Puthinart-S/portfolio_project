@@ -242,6 +242,25 @@ export const ProIcons5 = styled.img`
     }
 `;
 
+export const ProIcons6 = styled.img`
+    width: 3vw;
+    height: 3vw;
+
+    &:hover{
+        background-color: #cc00ff;
+        border-radius: 30%;
+    }
+    @media screen and (max-width: 922px){
+        width: 5vw;
+        height: 5vw;
+    }
+
+    @media screen and (max-width: 576px){
+        width: 10%;
+        height: 10%;
+    }
+`;
+
 export const IconWrapper = styled.div`
     display: flex;
     flex-flow: row wrap;

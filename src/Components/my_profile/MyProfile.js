@@ -5,14 +5,16 @@ import Icons2 from './imgref/facebook.png';
 import Icons3 from './imgref/github.png';
 import Icons4 from './imgref/phone-call.png';
 import Icons5 from './imgref/email.png';
+import Icons6 from './imgref/imgpdf.png';
+import pdf from './imgref/resume.pdf';
 import { ProContainer, ProImg, ProWrapper, ProContent, ProContent2, ProP, ProH1,
-     ProH2, WrapHead, ProIcons, ProIcons2, ProIcons3, IconWrapper, LinkImg, ProH22, ProIcons4, ProIcons5, LinkImg2, ProP3 } from './ProfileElements';
+     ProH2, WrapHead, ProIcons, ProIcons2, ProIcons3, IconWrapper, LinkImg, ProH22, ProIcons4, ProIcons5, LinkImg2, ProP3, ProIcons6 } from './ProfileElements';
 
 
 const MyProfile = () => {
 
 
-    const transitionEnter = { duration: 0.25, ease: [0.4, 0.45, 0.55, 0.6] };
+    const transitionEnter = { duration: 0.25, ease: [0.2, 0.35, 0.45, 0.5] };
     const transitionExit = { duration: 0.25, ease: [0.8, 0.4, 0.1, 0.2] };
     const contentsVariants = {
     initial: { scale: 0, opacity: 0 },
@@ -49,12 +51,17 @@ const MyProfile = () => {
                     </ProContent2>
                     <ProContent2 variants={contentsVariants}>
                         <ProH22>Front-end Developer</ProH22>
+                        <ProH22>& UX/UI Designer</ProH22>
                     </ProContent2>
                     <ProContent variants={contentsVariants}>
                         <ProH2>About</ProH2>
                         <ProP>Name: Puthinart Sutjaridkidtikul<br/>
                         Nickname: Boat<br/>
                         Date of Birth: 28 May 2000</ProP>
+                        <ProP style={{ fontWeight: 'bold' }}>Here my resume:</ProP>
+                        <IconWrapper>
+                        <LinkImg2 ><a href={pdf} target="_blank" rel="noreferrer"><ProIcons6 src={Icons6} alt='ico6'/></a></LinkImg2>
+                        </IconWrapper>
                     </ProContent>
                     <ProContent variants={contentsVariants}>
                         <ProH2>Contact</ProH2>
@@ -78,6 +85,8 @@ const MyProfile = () => {
                         &nbsp;&nbsp;&nbsp;- MongoDB, Firebase and MySQL</ProP>
                         <ProP> <ProP style={{ fontWeight: 'bold' }}>Tools</ProP>
                         &nbsp;&nbsp;&nbsp;- AdobeXD and Figma</ProP>
+                        <ProP> <ProP style={{ fontWeight: 'bold' }}>CMS</ProP>
+                        &nbsp;&nbsp;&nbsp;- Wordpress and WooCommerce</ProP>
                     </ProContent>
                 </ProWrapper>
             </ProContainer>
